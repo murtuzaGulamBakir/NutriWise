@@ -1,0 +1,121 @@
+.navbar {
+    padding: 1rem;
+    padding-top: 2rem;
+
+    .nav-links {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .nav-links-left {
+            a {
+                color: $links;
+            }
+        }
+
+        .nav-links-right {
+            font-weight: bold;
+        }
+
+        a {
+            margin-right: 2rem;
+            &:hover {
+                color: $primary;
+            }
+        }
+    }
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+
+    h1 {
+        font-size: 1.8rem;
+        margin-left: 0.8rem;
+    }
+}
+
+.brand-logo {
+    width: 3rem;
+    height: 3rem;
+}
+
+.mobile-nav {
+    display: none;
+
+    position: relative;
+    .hamburger-icon {
+        z-index: 10;
+
+        span {
+            transition: all 0.5s;
+        }
+
+        %lines {
+            display: block;
+            width: 20px;
+            height: 2.5px;
+            background-color: black;
+            transform: rotate(-45deg);
+        }
+
+        span:first-child {
+            @extend %lines;
+        }
+
+        span:nth-child(2) {
+            @extend %lines;
+            margin-left: 10px;
+        }
+
+        &.open {
+            span:first-child {
+                transform: rotate(45deg) translateX(9px) translateY(-6px);
+            }
+            span:nth-child(2) {
+                transform: rotate(135deg);
+            }
+        }
+    }
+}
+
+.mobile-nav-links {
+    background-color: $background;
+    z-index: 10;
+    padding-top: 1rem;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 6rem;
+    right: 0;
+    transition: all 0.5s;
+    transform: translateX(200rem);
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        li {
+            font-size: x-large;
+            margin-bottom: 2rem;
+        }
+    }
+
+    &.open {
+        display: block;
+        transform: translateX(0);
+    }
+}
+
+@include md-max {
+    .mobile-nav {
+        display: block;
+    }
+
+    .nav-links-left,
+    .nav-links-right {
+        display: none;
+    }
+}

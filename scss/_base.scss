@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Noto Sans", sans-serif;
+    background: $background;
+}
+
+a {
+    color: #000000;
+    text-decoration: none;
+    transition: all 0.2s;
+    -webkit-tap-highlight-color: transparent;
+
+    &:hover {
+        color: $primary;
+    }
+}
+
+li {
+    list-style: none;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+h2 {
+    font-size: 37.5px;
+}
+
+h3 {
+    font-size: 22.5px;
+}
+
+p {
+    font-size: 18.75px;
+    line-height: 1.7;
+}
+
+button {
+    font-size: 15px;
+    font-weight: bold;
+    transition: all 0.3s;
+    -webkit-tap-highlight-color: transparent;
+}
+
+button:hover {
+    transform: scale(0.9);
+}
+
+img {
+    width: 100%;
+}
+
+@include sm-max {
+    h1 {
+        font-size: 45px;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+
+    h3,
+    p {
+        font-size: 15px;
+    }
+}

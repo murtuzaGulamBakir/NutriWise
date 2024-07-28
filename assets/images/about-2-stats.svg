@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="604" height="234" viewBox="0 0 604 234">
+  <defs>
+    <filter id="Rectangle_95" x="0" y="0" width="604" height="234" filterUnits="userSpaceOnUse">
+      <feOffset dy="10" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="10" result="blur"/>
+      <feFlood flood-color="#19166d" flood-opacity="0.071"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_16128" data-name="Group 16128" transform="translate(30.239 19.508)">
+    <g transform="matrix(1, 0, 0, 1, -30.24, -19.51)" filter="url(#Rectangle_95)">
+      <rect id="Rectangle_95-2" data-name="Rectangle 95" width="544" height="174" rx="10" transform="translate(30 20)" fill="#fff"/>
+    </g>
+    <g id="Group_16116" data-name="Group 16116" transform="translate(50.508 85.97)">
+      <text id="_243" data-name="243" transform="translate(0.254 29.522)" fill="#ee6a6e" font-size="31" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="0">243</tspan></text>
+      <text id="_2_8g" data-name="2,8g" transform="translate(108.254 29.522)" fill="#23233c" font-size="31" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="0">2,8g</tspan></text>
+      <text id="_45_7g" data-name="45,7g" transform="translate(233.254 29.522)" fill="#23233c" font-size="31" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="0">45,7g</tspan></text>
+      <text id="_9_8g" data-name="9,8g" transform="translate(375.254 29.522)" fill="#23233c" font-size="31" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="0">9,8g</tspan></text>
+      <text id="calorias" transform="translate(5.254 49.522)" fill="#9e9e9e" font-size="11" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">calorias</tspan></text>
+      <text id="grasas" transform="translate(123.254 50.522)" fill="#9e9e9e" font-size="12" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">grasas</tspan></text>
+      <text id="carbohid." transform="translate(247.254 50.522)" fill="#9e9e9e" font-size="12" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">carbohid.</tspan></text>
+      <text id="proteinas" transform="translate(378.254 49.522)" fill="#9e9e9e" font-size="11" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">proteinas</tspan></text>
+    </g>
+    <text id="Nutritional_information" data-name="Nutritional information" transform="translate(148.761 46.492)" fill="#23233c" font-size="21" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Nutritional information</tspan></text>
+  </g>
+</svg>

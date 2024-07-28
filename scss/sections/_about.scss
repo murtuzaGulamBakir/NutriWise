@@ -1,0 +1,140 @@
+// About us section 1
+.about-grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+
+    .about-right-text {
+        order: 1;
+        h2 {
+            display: inline;
+        }
+    }
+
+    .dish-1-img {
+        order: 2;
+    }
+
+    .dish-2-img {
+        order: 3;
+    }
+
+    @include sm {
+        .dish-1-img {
+            order: 1;
+        }
+
+        .dish-2-img {
+            order: 2;
+        }
+
+        .about-right-text {
+            order: 3;
+        }
+    }
+
+    @include sm-max {
+        .dish-1-img,
+        .dish-2-img {
+            padding-left: 3rem;
+        }
+    }
+
+    @include lg {
+        .dish-1-img {
+            margin-top: -8rem;
+        }
+    }
+}
+
+// About us section 2
+.about-2-grid-container {
+    display: grid;
+    grid-template-columns: 1.5fr 2fr;
+    justify-items: center;
+}
+
+.about-left-text {
+    h2 {
+        display: inline;
+    }
+}
+
+.about-2-imgs {
+    position: relative;
+    z-index: -1;
+    width: 75%;
+
+    .about-2-stats-img {
+        position: absolute;
+        top: 17rem;
+        right: 13rem;
+        width: 80%;
+    }
+
+    .about-2-fruits-img {
+        position: absolute;
+        bottom: 3rem;
+        right: 1rem;
+    }
+}
+
+@include md {
+    .about-2-imgs {
+        margin-top: -8rem;
+    }
+}
+
+@include md-max {
+    .about-left-text {
+        margin-top: 0;
+    }
+    .about-2-imgs {
+        margin-top: -5rem;
+
+        .about-2-stats-img {
+            top: 15rem;
+            right: 4rem;
+        }
+    }
+}
+
+@include sm-max {
+    .about-2-imgs {
+        margin-top: -2rem;
+
+        .about-2-stats-img {
+            top: 10rem;
+            right: 2rem;
+        }
+
+        .about-2-fruits-img {
+            bottom: -1rem;
+            right: 0;
+        }
+    }
+}
+
+@include lg {
+    .about-2-grid-container {
+        justify-items: end;
+    }
+}
+
+// Common
+@include sm-max {
+    .about-grid-container,
+    .about-2-grid-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+@include between-sm-md {
+    .about-grid-container,
+    .about-2-grid-container {
+        margin-block: 5rem;
+    }
+
+    .about-2-fruits-img {
+        display: none;
+    }
+}

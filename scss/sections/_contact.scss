@@ -1,0 +1,55 @@
+.footer-grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: start;
+}
+
+.contact-icons {
+    display: flex;
+    justify-content: space-evenly;
+
+    img {
+        width: 10%;
+        cursor: pointer;
+    }
+
+    .contact-facebook-icon {
+        width: 5%;
+    }
+}
+
+@include md-max {
+    .footer-grid-container {
+        grid-template-columns: repeat(3, 1fr);
+        justify-items: center;
+        margin-top: 4rem;
+    }
+
+    .contact-icons {
+        margin-top: 3rem;
+        justify-content: space-between;
+
+        img {
+            width: 20%;
+        }
+
+        .contact-facebook-icon {
+            width: 10%;
+        }
+    }
+
+    .copyright-footer {
+        text-align: center;
+    }
+}
+
+@include sm-max {
+    .footer-grid-container {
+        grid-template-columns: 1fr;
+
+        .contact-links-1,
+        .contact-links-2 {
+            display: none;
+        }
+    }
+}

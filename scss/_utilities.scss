@@ -1,0 +1,116 @@
+.text-primary {
+    color: $primary;
+}
+
+.text-grey {
+    color: #7f8da0;
+}
+
+.font-weight-normal {
+    font-weight: normal;
+}
+
+.container {
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.no-scroll {
+    overflow: hidden;
+}
+
+.btn {
+    cursor: pointer;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+}
+
+.btn-dark {
+    background-color: $dark;
+    color: white;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.d-none {
+    display: none;
+}
+
+@include sm-max {
+    .sm-only {
+        display: block;
+    }
+}
+
+@include sm {
+    .d-sm-block {
+        display: block;
+    }
+}
+
+@include md {
+    .d-md-block {
+        display: block;
+    }
+}
+
+@include lg {
+    .d-lg-block {
+        display: block;
+    }
+}
+
+// paddings
+@for $i from 0 through 5 {
+    .p-#{$i} {
+        padding: $i * 1rem;
+    }
+    .pt-#{$i} {
+        padding-top: $i * 1rem;
+    }
+    .pb-#{$i} {
+        padding-bottom: $i * 1rem;
+    }
+    .pl-#{$i} {
+        padding-left: $i * 1rem;
+    }
+    .pr-#{$i} {
+        padding-right: $i * 1rem;
+    }
+    .px-#{$i} {
+        padding-inline: $i * 1rem;
+    }
+    .py-#{$i} {
+        padding-block: $i * 1rem;
+    }
+}
+
+// margins
+@for $i from 0 through 5 {
+    .m-#{$i} {
+        margin: $i * 1rem;
+    }
+    .mt-#{$i} {
+        margin-top: $i * 1rem;
+    }
+    .mb-#{$i} {
+        margin-bottom: $i * 1rem;
+    }
+    .ml-#{$i} {
+        margin-left: $i * 1rem;
+    }
+    .mr-#{$i} {
+        margin-right: $i * 1rem;
+    }
+    .mx-#{$i} {
+        margin-inline: $i * 1rem;
+    }
+    .my-#{$i} {
+        margin-block: $i * 1rem;
+    }
+}
