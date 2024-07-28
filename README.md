@@ -6,4 +6,4 @@ Design by [Mauricio Lopez on dribbble](https://dribbble.com/shots/14971279-Landi
 <br />
 <br />
 
-![Hero section](./screenshots/landing.png)
+![Hero section](./screenshots/landing-page.png)
